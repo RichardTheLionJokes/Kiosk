@@ -1,0 +1,30 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "icons/kiosk-19.png",
+         "38": "icons/kiosk-38.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "Kiosk"
+   },
+   "content_scripts": [ {
+      "js": [ "contentscript.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "description": "Kiosk",
+   "icons": {
+      "128": "icons/kiosk-128.png",
+      "16": "icons/kiosk-16.png",
+      "32": "icons/kiosk-32.png",
+      "48": "icons/kiosk-48.png",
+      "64": "icons/kiosk-64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx5cBVsjEAsRalRFh1GwqANGi0qaK7Z2ZgVHmhNoLV2Lwr9gjvZ5AfNIU6D2XPFKq4VHiBjv7o++w6Fzf3MkpNiT9mGgwyLGP0FWJr5syzeNZ0bNSN+wsMWj7evigAB4IaS22GJNcQDzaNMu+lzM0vg1/pWcpdEWBUHmM2+FMffYkkChZgHeSZ/KDVLB7e4+VsDaKkXIrZ6XZPkmDkWIlfsbYtxY+G9I4H096QS382vuBKJU9m5kTHOXQvCAK2c//RSQy78x2RVPrzFDEKgfIn9D4KSdTYamgfa/51t4IkVjR7hEyEImfxLaM80i9RUZ0y0PbBQPJSBuhI++CEMe0zwIDAQAB",
+   "manifest_version": 2,
+   "name": "Kiosk",
+   "permissions": [ "idle", "tabs" ],
+   "version": "1.0.0.1"
+}
