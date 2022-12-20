@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+    <title>Kiosk</title>
+	<script src="options.js"></script>
+</head>
+<body id="adskoe_body" style="font: italic 10pt sans-serif; margin: 0px;">
+    <div style="background: #FFFFF0; border-radius: 10px; padding: 10px;">
+	<div style="background:#FFF8DC; border: 2px solid #FFDAB9; border-radius:10px; padding:5px; box-shadow:inset 0 2px 8px rgba(0,0,0,0.5)">
+	    Главная страница:
+	</div>
+	<p><input id="home_page" value=""></p>
+	<div style="background:#FFF8DC; border: 2px solid #FFDAB9; border-radius:10px; padding:5px; box-shadow:inset 0 2px 8px rgba(0,0,0,0.5)">
+	    Время простоя, после которого всё закрывается, и открывается главная страница:
+	</div>
+	<p><select id="kiosk_interval">
+	    <option value="15">15 секунд</option>
+		<option value="30">30 секунд</option>
+		<option value="60">1 минута</option>
+		<option value="180">3 минуты</option>
+		<option value="300">5 минут</option>
+	</select></p>
+    <input id="save_options" type="button" value="Сохранить настройки" style="box-shadow:0 2px 8px rgba(0,0,0,0.5);">
+	</div>
+</body>
+</html>
+
